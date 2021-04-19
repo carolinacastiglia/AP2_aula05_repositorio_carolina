@@ -1,5 +1,6 @@
 from Pessoa import Pessoa
 from Fisica import Fisica
+from Juridica import Juridica
 
 print('-----PESSOA------')
 p1 = Pessoa()
@@ -25,3 +26,16 @@ print("Endereço de",f1.nome,":", f1._endereco)
 
 print("Altura:",f1.altura,"cm - Idade:",f1.idade,"anos - Peso:",f1.peso,"kg")
 print('--------------------\n')
+
+print('-----JURÍDICA------')
+j1 = Juridica()
+j1.setQuantidadeFuncionarios(57)
+j1.setNome('Grenal Indústria de Materiais Esportivos LTDA')
+j1.setEndereco('Rua Professor Cristiano Fischer')
+
+j1.imprimeNome()
+j1.imprimeCnpj()
+print("Endereço de",j1.nome,":",j1._endereco)
+
+print("Número de funcionários:",j1.quantidadeFuncionarios)
+print('--------------------')
