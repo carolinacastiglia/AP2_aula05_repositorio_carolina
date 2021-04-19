@@ -1,14 +1,15 @@
 from Pessoa import Pessoa
 
-class Fisica:
+class Fisica(Pessoa):
 
-    def __init__():
-        self.__cpf = 123.456.789-00
+    def __init__(self):
+        Pessoa.__init__(self)
+        self.__cpf = '12345678900'
         self.idade = None
         self.peso = None
         self.altura = None
     
-    def imprimeCpf():
+    def imprimeCpf(self):
         print("CPF:", self.__cpf)
     
     def __calculaImc(self):
