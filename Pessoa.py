@@ -10,7 +10,7 @@ class Pessoa:
         print("Nome: ", self.nome)
     
     def __imprimeTelefone(self):
-        print("Telefone: ", self.telefone)
+        print("Telefone: ", self.__telefone)
     
     def getCodigo(self):
         return self.__codigo
